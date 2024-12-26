@@ -1,0 +1,1 @@
+ln -s ~/Documents/{parent_directory_of_where_this_repo_was_cloned_to}/dotfiles/.emacs.d/init.el ~/.emacs.d/init.el
