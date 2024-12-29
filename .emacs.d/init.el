@@ -2,6 +2,9 @@
 (menu-bar-mode 1)
 (scroll-bar-mode 0)
 (global-display-line-numbers-mode)
+;; making the line numbers relative
+;; makes it faster to jump around using M-# + up or down keys
+(setq display-line-numbers-type 'relative)
 
 ;; set default size of frame
 (setq default-frame-alist '(
