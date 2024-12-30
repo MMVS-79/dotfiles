@@ -2,6 +2,7 @@
 (menu-bar-mode 1)
 (scroll-bar-mode 0)
 (global-display-line-numbers-mode)
+
 ;; making the line numbers relative
 ;; makes it faster to jump around using M-# + up or down keys
 (setq display-line-numbers-type 'relative)
@@ -17,6 +18,8 @@
 ;; load theme
 (load-theme 'gruber-darker  t)
 
-;;disable splash / welcome buffer
+;; disable splash / welcome buffer
 (setq inhibit-startup-screen t)
 
+;; delete trailing whitespace when I save files
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
