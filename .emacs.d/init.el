@@ -16,7 +16,7 @@
 ;; load packages
 (setq package-enable-at-startup nil) (package-initialize)
 ;; load theme
-(load-theme 'gruber-darker  t)
+(load-theme 'dracula  t)
 
 ;; disable splash / welcome buffer
 (setq inhibit-startup-screen t)
