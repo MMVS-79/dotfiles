@@ -23,3 +23,6 @@
 
 ;; delete trailing whitespace when I save files
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; disable backup files
+(setq make-backup-files nil)
