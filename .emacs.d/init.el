@@ -29,3 +29,7 @@
 
 ;; Prompt to delete autosaves when killing buffers.
 (setf kill-buffer-delete-auto-save-files t)
+
+;; dont create lock files
+;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Interlocking.html#Interlocking
+(setq create-lockfiles nil)
