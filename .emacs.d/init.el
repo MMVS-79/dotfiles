@@ -26,3 +26,6 @@
 
 ;; disable backup files
 (setq make-backup-files nil)
+
+;; Prompt to delete autosaves when killing buffers.
+(setf kill-buffer-delete-auto-save-files t)
