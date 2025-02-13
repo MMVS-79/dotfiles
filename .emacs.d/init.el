@@ -17,7 +17,7 @@
 ;; load packages
 (setq package-enable-at-startup nil) (package-initialize)
 ;; load theme
-(load-theme 'dracula  t)
+(load-theme 'gruber-darker  t)
 
 ;; disable splash / welcome buffer
 (setq inhibit-startup-screen t)
@@ -25,6 +25,12 @@
 
 ;; delete trailing whitespace when I save files
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; smart indent
+(setq-default indent-line-function 'indent-relative)
+
+;; autocomplete paired brackets
+(electric-pair-mode 1)
 
 ;; disable backup files
 (setq make-backup-files nil)
@@ -70,3 +76,10 @@
 (setq auto-revert-interval 1) ;; Check for file changes every 1 sec (default is 0.5s)
 (setq auto-revert-stop-on-user-input t) ;; Don't refresh while typing
 (global-auto-revert-mode 1) ;; Keep buffers updated
+
+;; YAML mode conf
+(require 'yaml-mode)
+(setq auto-mode-alist
+      (append '(("\\.yml\\'" . yaml-mode)
+                ("\\.yaml\\'" . yaml-mode))
+              auto-mode-alist))
