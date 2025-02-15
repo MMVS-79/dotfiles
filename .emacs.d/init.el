@@ -32,6 +32,10 @@
 ;; autocomplete paired brackets
 (electric-pair-mode 1)
 
+;; Prevent Window Splitting
+(setq display-buffer-alist
+      '(("." (display-buffer-same-window))))
+
 ;; disable backup files
 (setq make-backup-files nil)
 
