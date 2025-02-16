@@ -36,6 +36,10 @@
 (setq display-buffer-alist
       '(("." (display-buffer-same-window))))
 
+;; Block manual splits
+(global-set-key (kbd "C-x 2") (lambda () (interactive) (message "Vertical split disabled.")))
+(global-set-key (kbd "C-x 3") (lambda () (interactive) (message "Horizontal split disabled.")))
+
 ;; disable backup files
 (setq make-backup-files nil)
 
