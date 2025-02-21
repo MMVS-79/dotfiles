@@ -46,6 +46,15 @@
 ;; Prompt to delete autosaves when killing buffers.
 (setf kill-buffer-delete-auto-save-files t)
 
+;; Create the auto-saves directory if it doesn't exist
+(let ((auto-save-dir (expand-file-name "~/.emacs.d/auto-saves/")))
+  (unless (file-exists-p auto-save-dir)
+    (make-directory auto-save-dir t)))
+
+;; Set auto-save-file-name-transforms to store all auto-save files in one directory
+(setq auto-save-file-name-transforms
+      `((".*" ,(expand-file-name "~/.emacs.d/auto-saves/\\1") t)))
+
 ;; dont create lock files
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Interlocking.html#Interlocking
 (setq create-lockfiles nil)
