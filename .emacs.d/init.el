@@ -29,6 +29,9 @@
 ;; smart indent
 (setq-default indent-line-function 'indent-relative)
 
+;; back tab / reverse indent
+(global-set-key (kbd "<backtab>") 'indent-rigidly-left-to-tab-stop)
+
 ;; autocomplete paired brackets
 (electric-pair-mode 1)
 
@@ -94,9 +97,30 @@
 (setq auto-revert-stop-on-user-input t) ;; Don't refresh while typing
 (global-auto-revert-mode 1) ;; Keep buffers updated
 
+
+;; add ability to move text  using opt(mac) and up or down arrows
+(add-to-list 'load-path "~/.emacs.d/manual_cloned_packs/move-text")
+(require 'move-text)
+(move-text-default-bindings)
+(defun indent-region-advice (&rest ignored)
+  (let ((deactivate deactivate-mark))
+    (if (region-active-p)
+        (indent-region (region-beginning) (region-end))
+      (indent-region (line-beginning-position) (line-end-position)))
+    (setq deactivate-mark deactivate)))
+(advice-add 'move-text-up :after 'indent-region-advice)
+(advice-add 'move-text-down :after 'indent-region-advice)
+
 ;; YAML mode conf
 (require 'yaml-mode)
 (setq auto-mode-alist
       (append '(("\\.yml\\'" . yaml-mode)
                 ("\\.yaml\\'" . yaml-mode))
               auto-mode-alist))
+
+;; GDscript mode conf
+(add-to-list 'load-path "~/.emacs.d/manual_cloned_packs/gdscript-mode")
+(require 'gdscript-mode)
+
+;; Rust mode conf
+(require 'rust-mode)
