@@ -1,0 +1,6 @@
+[submodule ".emacs.d/manual_cloned_packs/gdscript-mode"]
+	path = .emacs.d/manual_cloned_packs/gdscript-mode
+	url = https://github.com/godotengine/emacs-gdscript-mode.git
+[submodule ".emacs.d/manual_cloned_packs/move-text"]
+	path = .emacs.d/manual_cloned_packs/move-text
+	url = https://github.com/emacsfodder/move-text.git
