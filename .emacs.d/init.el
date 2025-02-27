@@ -14,6 +14,9 @@
 (width . 0)
 (fullscreen . maximized)))
 
+;; Font
+(add-to-list 'default-frame-alist '(font . "Iosevka-14"))
+
 ;; load packages
 (setq package-enable-at-startup nil) (package-initialize)
 ;; load theme
