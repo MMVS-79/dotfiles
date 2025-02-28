@@ -4,3 +4,6 @@
 [submodule ".emacs.d/manual_cloned_packs/move-text"]
 	path = .emacs.d/manual_cloned_packs/move-text
 	url = https://github.com/emacsfodder/move-text.git
+[submodule ".emacs.d/manual_cloned_packs/simpc-mode"]
+	path = .emacs.d/manual_cloned_packs/simpc-mode
+	url = https://github.com/rexim/simpc-mode.git

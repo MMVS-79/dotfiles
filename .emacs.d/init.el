@@ -127,3 +127,8 @@
 
 ;; Rust mode conf
 (require 'rust-mode)
+
+;; simp c mode conf
+(add-to-list 'load-path "~/.emacs.d/manual_cloned_packs/simpc-mode")
+(require 'simpc-mode)
+(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
