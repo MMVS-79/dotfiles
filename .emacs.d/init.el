@@ -15,12 +15,13 @@
 (fullscreen . maximized)))
 
 ;; Font
-(add-to-list 'default-frame-alist '(font . "Iosevka-14"))
+(add-to-list 'default-frame-alist '(font . "Iosevka-15"))
 
 ;; load packages
 (setq package-enable-at-startup nil) (package-initialize)
 ;; load theme
-(load-theme 'gruber-darker  t)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/manual_cloned_packs/gruber-darker")
+(load-theme 'gruber-darker t)
 
 ;; disable splash / welcome buffer
 (setq inhibit-startup-screen t)
@@ -45,6 +46,9 @@
 ;; Block manual splits
 (global-set-key (kbd "C-x 2") (lambda () (interactive) (message "Vertical split disabled.")))
 (global-set-key (kbd "C-x 3") (lambda () (interactive) (message "Horizontal split disabled.")))
+
+;; tells Emacs to open files in the existing frame rather than creating a new one when they are opened from Finder (macOS)
+(setq ns-pop-up-frames nil)
 
 ;; disable backup files
 (setq make-backup-files nil)
