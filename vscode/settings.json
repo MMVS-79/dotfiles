@@ -1,0 +1,23 @@
+{
+    "editor.cursorBlinking": "solid",
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#FFFFFF",
+        "terminalCursor.foreground": "#FFFFFF"
+    },
+    "editor.cursorWidth": 3,
+    "window.restoreWindows": "none",
+    "terminal.integrated.cursorWidth": 0,
+    "editor.minimap.enabled": false,
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.startupEditor": "none",
+    "workbench.activityBar.location": "top",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.editor.enablePreview": false,
+    "editor.fontFamily": "'Iosevka', monospace",
+    "editor.fontSize": 15,
+    "terminal.integrated.fontFamily": "'Iosevka', monospace",
+    "terminal.integrated.fontSize": 15,
+    "telemetry.telemetryLevel": "off",
+    "terminal.external.osxExec": "Ghostty.app"
+}
