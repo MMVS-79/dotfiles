@@ -10,3 +10,6 @@
 [submodule ".emacs.d/manual_cloned_packs/gruber-darker"]
 	path = .emacs.d/manual_cloned_packs/gruber-darker
 	url = https://github.com/rexim/gruber-darker-theme.git
+[submodule ".emacs.d/manual_cloned_packs/vterm"]
+	path = .emacs.d/manual_cloned_packs/vterm
+	url = https://github.com/akermu/emacs-libvterm.git

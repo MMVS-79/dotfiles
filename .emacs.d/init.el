@@ -118,6 +118,11 @@
 (advice-add 'move-text-up :after 'indent-region-advice)
 (advice-add 'move-text-down :after 'indent-region-advice)
 
+;; vterm TODO - > convert all load paths to use user-emacs-directory as it will make the config more agnostic
+(add-to-list 'load-path (expand-file-name "manual_cloned_packs/vterm" user-emacs-directory))
+(require 'vterm)
+(setq vterm-shell "/bin/zsh --login")
+
 ;; YAML mode conf
 (require 'yaml-mode)
 (setq auto-mode-alist
