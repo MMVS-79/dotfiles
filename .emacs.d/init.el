@@ -4,9 +4,9 @@
 (setq use-dialog-box nil) ;; No pop-up dialogs
 
 (global-display-line-numbers-mode)
-;; making the line numbers relative
-;; makes it faster to jump around using M-# + up or down keys
-(setq display-line-numbers-type 'relative)
+;; Display (an absolute) line number before each non-continuation screen line that displays buffer text.
+;; If the line is a continuation line, or if the entire screen line displays a display or an overlay string, that line will not be numbered.
+(setq display-line-numbers-type 't)
 
 ;; set default size of frame
 (setq default-frame-alist '(
@@ -16,6 +16,17 @@
 
 ;; Font
 (add-to-list 'default-frame-alist '(font . "Iosevka-15"))
+
+;; tabs
+(global-tab-line-mode 1)
+(custom-set-faces
+ '(tab-line ((t (:inherit mode-line :background "#181818" :foreground "#757575" :height 0.9))))
+ '(tab-line-tab ((t (:inherit tab-line :background "#252525" :foreground "#b8b8b8"
+                              :box (:line-width 1 :color "#252525")))))
+ '(tab-line-tab-current ((t (:inherit tab-line-tab :background "#3a3a3a" :foreground "#e4e4ef"
+                                      :box (:line-width 1 :color "#3a3a3a")))))
+ '(tab-line-tab-inactive ((t (:inherit tab-line-tab :background "#181818" :foreground "#505050")))))
+
 
 ;; load packages
 (setq package-enable-at-startup nil) (package-initialize)
