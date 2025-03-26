@@ -50,6 +50,9 @@
 ;; autocomplete paired brackets
 (electric-pair-mode 1)
 
+;; Cmd + / (macOS) will toggle comments like in many modern IDEs
+(global-set-key (kbd "s-/") 'comment-line)
+
 ;; Prevent Window Splitting
 (setq display-buffer-alist
       '(("." (display-buffer-same-window))))
