@@ -1,13 +1,9 @@
-// Settings in here override those in "Default/Preferences.sublime-settings",
-// and are overridden in turn by syntax-specific settings.
 {
-	//"relative_line_numbers": true,
-	"ignored_packages":
-	[
-		"Vintage",
-	],
-	"index_files": true,
-	"theme": "ayu-dark.sublime-theme",
-	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
-	"font_size": 14,
+    "color_scheme": "ayu-dark.sublime-color-scheme",
+    "ignored_packages": [
+        "Vintage",
+    ],
+    "theme": "ayu-dark.sublime-theme",
+    "font_face": "Iosevka",
+    "font_size": 15,
 }
