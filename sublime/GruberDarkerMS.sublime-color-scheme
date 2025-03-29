@@ -1,0 +1,70 @@
+{
+  "globals": {
+    "background": "#000000",  // Pitch Black Background
+    "foreground": "#C5C8C6",
+    "caret": "#A8C8D4",
+    "selection": "#5F5A60",
+    "gutter": "#000000",  // Pitch Black Gutter
+    "lineHighlight": "#2A2A2A",
+    "findHighlight": "#D0C8D0",
+    "gutterForeground": "#8A8F97",
+    "selectionBorder": "#000000"
+  },
+  "rules": [
+    {
+      "name": "Comment",
+      "scope": "comment",
+      "foreground": "#F8C555"
+    },
+    {
+      "name": "String",
+      "scope": "string",
+      "foreground": "#A6E22E"
+    },
+    {
+      "name": "Keyword",
+      "scope": "keyword",
+      "foreground": "#F92672"
+    },
+    {
+      "name": "Function",
+      "scope": "entity.name.function",
+      "foreground": "#66D9EF"
+    },
+    {
+      "name": "Number",
+      "scope": "constant.numeric",
+      "foreground": "#AE81FF"
+    },
+    {
+      "name": "Variable",
+      "scope": "variable",
+      "foreground": "#F8F8F2"
+    },
+    {
+      "name": "Type",
+      "scope": "entity.name.type",
+      "foreground": "#66D9EF"
+    },
+    {
+      "name": "Built-in Function",
+      "scope": "support.function",
+      "foreground": "#66D9EF"
+    },
+    {
+      "name": "Class",
+      "scope": "entity.name.type.class",
+      "foreground": "#A6E22E"
+    },
+    {
+      "name": "Global Variable",
+      "scope": "variable.other.global",
+      "foreground": "#F8F8F2"
+    },
+    {
+      "name": "Operator",
+      "scope": "keyword.operator",
+      "foreground": "#F92672"
+    }
+  ]
+}

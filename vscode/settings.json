@@ -12,7 +12,7 @@
     "workbench.startupEditor": "none",
     "workbench.activityBar.location": "top",
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.colorTheme": "Tsoding Emacs Gruber Darkest",
     "workbench.editor.enablePreview": false,
     "editor.fontFamily": "'Iosevka', monospace",
     "editor.fontSize": 15,
