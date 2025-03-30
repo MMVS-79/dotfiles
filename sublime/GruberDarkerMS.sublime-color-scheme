@@ -1,7 +1,7 @@
 {
   "globals": {
     "background": "#000000",  // Pitch Black Background
-    "foreground": "#C5C8C6",
+    "foreground": "#FFFFFF",  // Pure White for Normal Text
     "caret": "#A8C8D4",
     "selection": "#5F5A60",
     "gutter": "#000000",  // Pitch Black Gutter
@@ -14,17 +14,17 @@
     {
       "name": "Comment",
       "scope": "comment",
-      "foreground": "#F8C555"
+      "foreground": "#FFA500" // Orange
     },
     {
       "name": "String",
       "scope": "string",
-      "foreground": "#A6E22E"
+      "foreground": "#A6E22E" //green
     },
     {
-      "name": "Keyword",
+      "name": "Keyword (like 'func')",
       "scope": "keyword",
-      "foreground": "#F92672"
+      "foreground": "#ffdd33"  // Gold/Yellow
     },
     {
       "name": "Function",
@@ -42,9 +42,9 @@
       "foreground": "#F8F8F2"
     },
     {
-      "name": "Type",
-      "scope": "entity.name.type",
-      "foreground": "#66D9EF"
+      "name": "Type (like 'int')",
+      "scope": "storage.type",
+      "foreground": "#A9AF8B"  // Light Olive Green
     },
     {
       "name": "Built-in Function",
