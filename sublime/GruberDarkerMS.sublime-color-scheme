@@ -2,7 +2,7 @@
   "globals": {
     "background": "#000000",  // Pitch Black Background
     "foreground": "#FFFFFF",  // Pure White for Normal Text
-    "caret": "#A8C8D4",
+    "caret": "#FFDD33", // gold/Yellow to match keywords
     "selection": "#5F5A60",
     "gutter": "#000000",  // Pitch Black Gutter
     "lineHighlight": "#2A2A2A",
