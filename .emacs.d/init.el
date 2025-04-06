@@ -32,7 +32,7 @@
 (setq package-enable-at-startup nil) (package-initialize)
 ;; load theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/manual_cloned_packs/gruber-darker")
-(load-theme 'gruber-darker t)
+(load-theme 'modus-operandi-tinted t)
 
 ;; disable splash / welcome buffer
 (setq inhibit-startup-screen t)
