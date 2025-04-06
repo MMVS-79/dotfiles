@@ -1,0 +1,70 @@
+{
+  "globals": {
+    "background": "#FDF6E3",  // Solarized Light background
+    "foreground": "#657B83",  // Solarized base text
+    "caret": "#B58900",       // Solarized yellow (similar to your gold caret)
+    "selection": "#EEE8D5",   // Light beige selection
+    "gutter": "#FDF6E3",      // Same as background to blend
+    "lineHighlight": "#EEE8D5", // Subtle highlight
+    "findHighlight": "#D33682", // Solarized magenta
+    "gutterForeground": "#93A1A1", // Solarized gray-blue
+    "selectionBorder": "#FDF6E3"
+  },
+  "rules": [
+    {
+      "name": "Comment",
+      "scope": "comment",
+      "foreground": "#CB4B16"  // Solarized orange (a nice replacement for your bright orange)
+    },
+    {
+      "name": "String",
+      "scope": "string",
+      "foreground": "#859900"  // Solarized green
+    },
+    {
+      "name": "Keyword (like 'func')",
+      "scope": "keyword",
+      "foreground": "#B58900"  // Solarized yellow (like your gold)
+    },
+    {
+      "name": "Function",
+      "scope": "entity.name.function",
+      "foreground": "#268BD2"  // Solarized blue
+    },
+    {
+      "name": "Number",
+      "scope": "constant.numeric",
+      "foreground": "#6C71C4"  // Solarized violet
+    },
+    {
+      "name": "Variable",
+      "scope": "variable",
+      "foreground": "#657B83"  // Default foreground
+    },
+    {
+      "name": "Type (like 'int')",
+      "scope": "storage.type",
+      "foreground": "#2AA198"  // Solarized cyan (closest to your olive green)
+    },
+    {
+      "name": "Built-in Function",
+      "scope": "support.function",
+      "foreground": "#268BD2"  // Same blue as function
+    },
+    {
+      "name": "Class",
+      "scope": "entity.name.type.class",
+      "foreground": "#859900"  // Green
+    },
+    {
+      "name": "Global Variable",
+      "scope": "variable.other.global",
+      "foreground": "#657B83"  // Base text
+    },
+    {
+      "name": "Operator",
+      "scope": "keyword.operator",
+      "foreground": "#DC322F"  // Solarized red
+    }
+  ]
+}
