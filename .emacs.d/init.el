@@ -32,7 +32,9 @@
 (setq package-enable-at-startup nil) (package-initialize)
 ;; load theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/manual_cloned_packs/gruber-darker")
-(load-theme 'modus-operandi-tinted t)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/manual_cloned_packs/everforest")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/manual_cloned_packs/vs-code-dark-plus")
+(load-theme 'vscode-dark-plus t)
 
 ;; disable splash / welcome buffer
 (setq inhibit-startup-screen t)

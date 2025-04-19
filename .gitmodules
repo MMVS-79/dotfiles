@@ -13,3 +13,9 @@
 [submodule ".emacs.d/manual_cloned_packs/vterm"]
 	path = .emacs.d/manual_cloned_packs/vterm
 	url = https://github.com/akermu/emacs-libvterm.git
+[submodule ".emacs.d/manual_cloned_packs/everforest"]
+	path = .emacs.d/manual_cloned_packs/everforest
+	url = https://github.com/Theory-of-Everything/everforest-emacs.git
+[submodule ".emacs.d/manual_cloned_packs/vs-code-dark-plus"]
+	path = .emacs.d/manual_cloned_packs/vs-code-dark-plus
+	url = https://github.com/ianyepan/vscode-dark-plus-emacs-theme.git
