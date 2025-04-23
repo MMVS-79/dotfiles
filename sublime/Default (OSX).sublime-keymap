@@ -8,6 +8,10 @@
             ["carry_file_to_pane", {"direction": "right"}]
         ]
     }
-}
+}, // Font lock (no accidental font change)
+  { "keys": ["super+="], "command": "noop" },
+  { "keys": ["super+-"], "command": "noop" },
+  { "keys": ["super+mousewheel"], "command": "noop" }
 
 ]
+
