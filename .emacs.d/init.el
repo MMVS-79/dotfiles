@@ -138,6 +138,7 @@
 (add-to-list 'load-path (expand-file-name "manual_cloned_packs/vterm" user-emacs-directory))
 (require 'vterm)
 (setq vterm-shell "/bin/zsh --login")
+(add-hook 'vterm-mode-hook (lambda() (display-line-numbers-mode -1)))
 
 ;; YAML mode conf
 (require 'yaml-mode)
