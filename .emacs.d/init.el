@@ -39,6 +39,9 @@
 ;; disable splash / welcome buffer
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message nil) ;; No message in scratch buffer
+;; Automatically open buffer list on startup
+(add-hook 'emacs-startup-hook (lambda ()
+                                (call-interactively 'buffer-menu)))
 
 ;; delete trailing whitespace when I save files
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
