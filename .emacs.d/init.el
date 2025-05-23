@@ -15,7 +15,7 @@
 (fullscreen . maximized)))
 
 ;; Font
-(add-to-list 'default-frame-alist '(font . "Iosevka-15"))
+(add-to-list 'default-frame-alist '(font . "Iosevka-16"))
 
 ;; tabs
 (global-tab-line-mode 1)
