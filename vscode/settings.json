@@ -19,5 +19,6 @@
     "terminal.integrated.fontSize": 15,
     "telemetry.telemetryLevel": "off",
     "terminal.external.osxExec": "Ghostty.app",
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "sshfs.configpaths": []
 }
