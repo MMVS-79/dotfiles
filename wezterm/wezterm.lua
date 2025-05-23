@@ -6,7 +6,7 @@ return {
   initial_rows = 300,
 
   -- Font Settings
-  font = wezterm.font("Iosevka"),
+  font = wezterm.font("Iosevka Term"),
   font_size = 16,
 
   -- Color Scheme (using Wez theme)
