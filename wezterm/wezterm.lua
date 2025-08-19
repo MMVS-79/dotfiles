@@ -1,6 +1,7 @@
 local wezterm = require 'wezterm'
 
 return {
+
   -- Window Size
   initial_cols = 300,
   initial_rows = 300,
@@ -9,7 +10,7 @@ return {
   font = wezterm.font("Iosevka Term"),
   font_size = 16,
 
-  -- Color Scheme (using Wez theme)
+  -- Color Scheme
   color_scheme = "Wez",
 
   -- Additional settings for window appearance
@@ -18,4 +19,4 @@ return {
   -- manually setting rendering backend
   front_end = "WebGpu",
 
-}
+ }
