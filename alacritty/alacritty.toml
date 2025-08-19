@@ -1,0 +1,7 @@
+[font]
+normal = { family = "Iosevka Term" }
+size = 16.0
+
+[window]
+startup_mode = "Windowed"
+dimensions = { columns = 500, lines = 300 }  # absurdly large to trigger screen fill
