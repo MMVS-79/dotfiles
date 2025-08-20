@@ -34,7 +34,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/manual_cloned_packs/gruber-darker")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/manual_cloned_packs/everforest")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/manual_cloned_packs/vs-code-dark-plus")
-(load-theme 'vscode-dark-plus t)
+(load-theme 'gruber-darker t)
 
 ;; disable splash / welcome buffer
 (setq inhibit-startup-screen t)
