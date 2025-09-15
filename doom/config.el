@@ -89,3 +89,6 @@
 
 ;; Disable auto-save
 (setq auto-save-default nil)
+
+;; Auto kill previous dired buffer
+(setq dired-kill-when-opening-new-dired-buffer t)

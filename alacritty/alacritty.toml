@@ -5,3 +5,38 @@ size = 16.0
 [window]
 startup_mode = "Windowed"
 dimensions = { columns = 500, lines = 300 }  # absurdly large to trigger screen fill
+
+[colors.primary]
+background = "#282c34"
+foreground = "#abb2bf"
+bright_foreground = "#ffffff"   # for bold / bright text
+
+[colors.cursor]
+text = "#282c34"
+cursor = "#abb2bf"
+
+[colors.selection]
+text = "#282c34"
+background = "#3e4451"        # a slightly lighter shade for selection
+
+[colors.normal]
+black   = "#282c34"
+red     = "#ff6c6b"            # used for errors / alerts
+green   = "#3fc56b"            # functions / successful output
+yellow  = "#f9c859"            # strings / warnings
+blue    = "#10b1fe"            # keywords / primary accents
+magenta = "#ff6480"            # types / classes
+cyan    = "#3691ff"            # tags / URLs etc.
+white   = "#abb2bf"
+
+[colors.bright]
+black   = "#3e4451"
+red     = "#ff78f8"            # brighter red / pink
+green   = "#9f7efe"
+yellow  = "#ffd866"            # a lighter yellow
+blue    = "#58a6ff"
+magenta = "#ff936a"
+cyan    = "#56b6ff"
+white   = "#ffffff"
+
+
