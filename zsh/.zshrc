@@ -18,3 +18,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+alias typora="open -a Typora"
