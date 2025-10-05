@@ -2798,7 +2798,33 @@ initial_window_width  500c
 initial_window_height 300c
 startup_session none
 
-include dracula.conf
+# Colors
+background            #282c34
+foreground            #abb2bf
+selection_foreground  #282c34
+selection_background  #3e4451
+cursor                #abb2bf
+cursor_text_color     #282c34
+
+# Normal colors
+color0  #282c34
+color1  #ff6c6b
+color2  #3fc56b
+color3  #f9c859
+color4  #10b1fe
+color5  #ff6480
+color6  #3691ff
+color7  #abb2bf
+
+# Bright colors
+color8  #3e4451
+color9  #ff78f8
+color10 #9f7efe
+color11 #ffd866
+color12 #58a6ff
+color13 #ff936a
+color14 #56b6ff
+color15 #ffffff
 
 # Bright foreground for bold/bright text
 # bold_font       Iosevka Term
